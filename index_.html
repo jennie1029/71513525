@@ -1,1 +1,93 @@
-
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中國歷史時間軸｜從遠古到現代</title>
+<style>
+  :root { --ink:#203047; --muted:#617084; --line:#d9e1ea; --paper:#f6f8fb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family: "Noto Sans TC","Microsoft JhengHei",sans-serif; color:var(--ink); background:transparent; }
+  .wrap { max-width:1000px; margin:0 auto; padding:22px 16px 30px; }
+  .hero { padding:28px 24px; border-radius:22px; color:white; background:linear-gradient(135deg,#173b63,#367d86); }
+  .eyebrow { font-size:12px; letter-spacing:.16em; opacity:.85; font-weight:700; }
+  h1 { margin:9px 0 8px; font-size:clamp(26px,4vw,38px); line-height:1.25; }
+  .hero p { margin:0; line-height:1.8; color:#edf7fa; }
+  .hint { margin:18px 0 20px; padding:12px 15px; background:#eef4f8; border-left:4px solid #367d86; border-radius:8px; color:#40556b; font-size:14px; line-height:1.7; }
+  .timeline { position:relative; display:grid; gap:13px; }
+  .timeline:before { content:""; position:absolute; left:22px; top:20px; bottom:20px; width:3px; background:var(--line); border-radius:3px; }
+  .era { position:relative; display:grid; grid-template-columns:46px 1fr; gap:12px; align-items:stretch; }
+  .dot { z-index:1; width:18px; height:18px; margin:22px auto 0; border:4px solid white; border-radius:50%; box-shadow:0 0 0 2px var(--accent); background:var(--accent); }
+  .card { border:1px solid #e2e8ef; border-radius:15px; padding:16px 18px; background:white; box-shadow:0 3px 12px rgba(27,48,72,.045); }
+  .top { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; margin-bottom:7px; }
+  h2 { margin:0; font-size:19px; }
+  .date { font-size:12px; font-weight:700; color:var(--accent); background:var(--tint); padding:5px 9px; border-radius:999px; }
+  .desc { margin:0; color:var(--muted); line-height:1.7; font-size:14px; }
+  .tag { display:inline-block; margin:9px 5px 0 0; padding:4px 8px; border-radius:6px; background:#f2f5f8; color:#43566b; font-size:12px; }
+  .foot { margin-top:20px; padding:16px; border:1px dashed #cbd7e2; border-radius:13px; text-align:center; color:#5b6d80; font-size:13px; line-height:1.8; }
+  @media(min-width:700px) { .timeline { gap:15px; } .card { padding:18px 21px; } .desc { font-size:15px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">CHINESE HISTORY · TIMELINE</div>
+    <h1>中國歷史時間軸</h1>
+    <p>從早期文明到現代中國，用七個階段掌握朝代更替、歷史轉折與重要關鍵字。</p>
+  </header>
+  <div class="hint"><strong>閱讀方式：</strong>西元前的年份以「前」表示；西元前 1 年的下一年是西元 1 年，沒有西元 0 年。夏朝等早期年代屬約略估計。</div>
+  <main class="timeline">
+    <section class="era" style="--accent:#648b68;--tint:#eaf2e9">
+      <div class="dot"></div><article class="card">
+        <div class="top"><h2>遠古文明・夏商周</h2><span class="date">約前 2070 年起</span></div>
+        <p class="desc">文明逐漸形成，出現早期王朝與政治制度。商朝留下甲骨文與青銅器；周朝發展分封、宗法與天命觀念。</p>
+        <span class="tag">文明起源</span><span class="tag">甲骨文</span><span class="tag">分封制度</span>
+      </article>
+    </section>
+    <section class="era" style="--accent:#b88738;--tint:#f8f0df">
+      <div class="dot"></div><article class="card">
+        <div class="top"><h2>春秋戰國</h2><span class="date">前 770–前 221 年</span></div>
+        <p class="desc">諸侯爭霸、各國變法，思想界出現百家爭鳴，儒家、道家、法家等學說影響深遠。</p>
+        <span class="tag">百家爭鳴</span><span class="tag">諸侯爭霸</span><span class="tag">變法</span>
+      </article>
+    </section>
+    <section class="era" style="--accent:#527eae;--tint:#eaf1f9">
+      <div class="dot"></div><article class="card">
+        <div class="top"><h2>秦漢</h2><span class="date">前 221 年–220 年</span></div>
+        <p class="desc">秦始皇統一六國，推動文字、貨幣與度量衡標準化；漢朝強化帝國制度，絲綢之路促進東西交流。</p>
+        <span class="tag">大一統</span><span class="tag">中央集權</span><span class="tag">絲綢之路</span>
+      </article>
+    </section>
+    <section class="era" style="--accent:#8879b7;--tint:#f0edfa">
+      <div class="dot"></div><article class="card">
+        <div class="top"><h2>魏晉南北朝</h2><span class="date">220–589 年</span></div>
+        <p class="desc">政權長期分裂，人口遷徙與南北交流加深，佛教傳播與民族融合改變中國社會文化。</p>
+        <span class="tag">三國鼎立</span><span class="tag">南北分治</span><span class="tag">民族融合</span>
+      </article>
+    </section>
+    <section class="era" style="--accent:#bd8053;--tint:#fbefe6">
+      <div class="dot"></div><article class="card">
+        <div class="top"><h2>隋唐</h2><span class="date">581–907 年</span></div>
+        <p class="desc">隋朝重新統一並建設大運河；唐朝文化、詩歌、制度與國際交流興盛，安史之亂後逐步衰退。</p>
+        <span class="tag">大運河</span><span class="tag">科舉</span><span class="tag">唐詩</span>
+      </article>
+    </section>
+    <section class="era" style="--accent:#418d89;--tint:#e5f3f1">
+      <div class="dot"></div><article class="card">
+        <div class="top"><h2>宋元明清</h2><span class="date">960–1912 年</span></div>
+        <p class="desc">宋代商業、城市與科技發展；元代統治者為蒙古人；明清時期海上交流、帝國疆域與對外關係持續變化，晚清面臨內憂外患。</p>
+        <span class="tag">商業發展</span><span class="tag">海上交流</span><span class="tag">帝國轉型</span>
+      </article>
+    </section>
+    <section class="era" style="--accent:#ad6666;--tint:#f8eaea">
+      <div class="dot"></div><article class="card">
+        <div class="top"><h2>近現代</h2><span class="date">1911 年至今</span></div>
+        <p class="desc">辛亥革命推翻清朝統治，1912 年中華民國成立；經歷抗日戰爭與國共內戰後，1949 年中華人民共和國成立。</p>
+        <span class="tag">辛亥革命</span><span class="tag">抗日戰爭</span><span class="tag">現代國家</span>
+      </article>
+    </section>
+  </main>
+  <footer class="foot">記憶主線：文明形成 → 諸侯競爭 → 帝國統一 → 分裂融合 → 隋唐盛世 → 帝國轉型 → 近現代革命與建國<br>註：此頁為入門概覽；早期年代及部分分期在不同史學年表中可能略有差異。</footer>
+</div>
+</body>
+</html>
